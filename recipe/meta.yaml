@@ -15,6 +15,9 @@ build:
   script: |
     tgz=$(npm pack)
     npm install -g $tgz
+    mkdir -p $PREFIX/share
+    mv $PREFIX/lib/node_modules/three $PREFIX/share/threejs
+    ln -s $PREFIX/share/threejs $PREFIX/lib/node_modules/three
 
 requirements:
   build:
@@ -22,7 +25,7 @@ requirements:
 
 test:
   commands:
-    - test -f $PREFIX/lib/node_modules/three/build/three.min.js  # [unix]
+    - test -f $PREFIX/share/threejs/build/three.min.js  # [unix]
 
 about:
   home: https://threejs.org
