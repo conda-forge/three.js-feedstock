@@ -5,7 +5,7 @@ Home: https://threejs.org
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: JavaScript 3D library.
 
