@@ -5,11 +5,11 @@ Home: https://threejs.org
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/three.js-feedstock/blob/master/LICENSE.txt)
 
 Summary: JavaScript 3D library.
 
-
+Development: https://github.com/mrdoob/three.js
 
 Current build status
 ====================
