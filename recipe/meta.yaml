@@ -1,5 +1,5 @@
 {% set name = "three.js" %}
-{% set version = "117" %}
+{% set version = "121" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/mrdoob/three.js/archive/r{{ version }}.tar.gz
-  sha256: 2d7b898e93ef7c40f0dde30ec8e1fae97087aa13831957c1cf00baaac0df5567
+  sha256: 07f51e7a3b1b71b45c0edef2ebec5bdc9d1db88d94decb210788e0ca4e59e984
 
 build:
   number: 0
