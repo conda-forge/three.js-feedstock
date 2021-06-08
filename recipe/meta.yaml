@@ -10,14 +10,16 @@ source:
   sha256: eeed366444ff521cfa0f3f97a33dea6adefb8a3111617dc1599df83722bcd56a
 
 build:
-  number: 0
+  number: 1
   noarch: generic
   script: |
+    cat $RECIPE_DIR/sage.js >> src/Three.js
     tgz=$(npm pack)
     npm install -g $tgz
     mkdir -p $PREFIX/share
     mv $PREFIX/lib/node_modules/three $PREFIX/share/threejs
     ln -s $PREFIX/share/threejs $PREFIX/lib/node_modules/three
+    echo "$PKG_VERSION" > $PREFIX/share/threejs/version
 
 requirements:
   build:
