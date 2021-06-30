@@ -1,5 +1,5 @@
 {% set name = "three.js" %}
-{% set version = "122" %}
+{% set version = "130" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/mrdoob/three.js/archive/r{{ version }}.tar.gz
-  sha256: eeed366444ff521cfa0f3f97a33dea6adefb8a3111617dc1599df83722bcd56a
+  sha256: 40eff772249f4c16ea2d22ba7d2d65672eb51196e4dee8b1543a5f1cf2cc1c67
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   script: |
     cat $RECIPE_DIR/sage.js >> src/Three.js
