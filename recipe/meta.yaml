@@ -11,11 +11,11 @@ source:
 
 build:
   number: 2
-  noarch: generic
 
 outputs:
   - name: three.js
-    noarch: generic
+    build:
+      noarch: generic
     script: build-threejs.sh
     requirements:
       build:
@@ -25,7 +25,8 @@ outputs:
         - test -f $PREFIX/share/threejs/build/three.min.js  # [unix]
 
   - name: threejs-sage
-    noarch: generic
+    build:
+      noarch: generic
     script: build-threejs-sage.sh
     requirements:
       host:
