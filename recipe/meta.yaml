@@ -1,5 +1,5 @@
 {% set name = "three.js" %}
-{% set version = "122" %}
+{% set version = "144" %}
 
 package:
   name: three.js-split
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/mrdoob/three.js/archive/r{{ version }}.tar.gz
-  sha256: eeed366444ff521cfa0f3f97a33dea6adefb8a3111617dc1599df83722bcd56a
+  sha256: 5e55f8187d31b10b72d959d5e7a43c652b074719295cf2ed2cbbc4eaf3bc55e9
 
 build:
-  number: 2
+  number: 0
 
 outputs:
   - name: three.js
